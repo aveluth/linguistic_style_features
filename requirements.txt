@@ -1,0 +1,8 @@
+pandas~=2.2.3
+tqdm~=4.67.1
+setuptools~=68.2.0
+spacy~=3.8.2
+pyphen~=0.17.0
+textstat~=0.7.4
+germansentiment~=1.1.0
+vaderSentiment~=3.3.2
