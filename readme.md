@@ -1,4 +1,4 @@
-# Linguistic Feature Extraction and LIWC Analysis
+# Linguistic Feature Extraction
 
 A Python repository for extracting various linguistic and readability features from text data stored in CSV files. The code processes text data using natural language processing tools to compute metrics such as word count, sentence count, syllable count, lexical diversity, readability indices, sentiment probabilities, named entity counts, abstractness scores, and more. Additionally, if LIWC analysis data is available, the repository can compute combined stylometric features.
 
