@@ -161,12 +161,12 @@ def extract_abstractness_features(doc, abstractness_lookup, language, stopword_l
         if lemma not in stopword_list and lemma in abstractness_lookup:
             abs_data = abstractness_lookup[lemma]
             score_list.append({k: abs_data.get(k, 0) for k in abs_keys[language]})
-        else:
-            score_list.append({k: 0 for k in abs_keys[language]})
+    if not score_list:
+        score_list.append({k: 0 for k in abs_keys[language]})
     # Compute the mean of each abstractness feature over the tokens.
-    return pd.DataFrame(score_list)[abs_keys[language]].mean().to_dict()
-
-
+    cdf = pd.DataFrame(score_list)[abs_keys[language]].mean().to_dict()
+    print(cdf)
+    return cdf
 def extract_named_entities(doc):
     # Define categories and count occurrences using generator expressions.
     people_entities = {'PERSON'}
