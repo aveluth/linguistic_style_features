@@ -105,9 +105,9 @@ text-feature-extraction/
 │       └── ratings_lrec16_koeper_ssiw.txt       # German abstractness data
 ├── main.py                # Main script to process the CSV file.
 ├── feature_extraction.py  # Module for feature extraction and NLP processing.
-├── utils.py               # Utility functions for CSV read/write (if applicable).
+├── utils.py               # Utility functions for CSV read/write 
 ├── README.md              # This file.
-└── requirements.txt       # List of dependencies (if provided).
+└── requirements.txt       # List of dependencies
 ```
 
 ---
